@@ -1,6 +1,9 @@
 {
   "name": "@retchee-db/server",
   "private": true,
+  "engines": { 
+   "node": "16.0.1" 
+   } 
   "scripts": {
     "start": "nest start",
     "start:watch": "nest start --watch",
