@@ -1,0 +1,4260 @@
+[
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Candidate",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Candidate",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Candidate",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Candidate",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Candidate",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Recruiter",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Recruiter",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Recruiter",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Recruiter",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Recruiter",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Entreprise",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Entreprise",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Entreprise",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Entreprise",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Entreprise",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chatroom",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chatroom",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chatroom",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chatroom",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chatroom",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chat",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chat",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chat",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chat",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Chat",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Message",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Message",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Message",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Message",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Message",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CandidatesOnChatroom",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CandidatesOnChatroom",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CandidatesOnChatroom",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CandidatesOnChatroom",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "CandidatesOnChatroom",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FollowEntreprise",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FollowEntreprise",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FollowEntreprise",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FollowEntreprise",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "FollowEntreprise",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Survey",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Survey",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Survey",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Survey",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Survey",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Experience",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Experience",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Experience",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Experience",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Experience",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Course",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contract",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contract",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contract",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contract",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Contract",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Skill",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Skill",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Skill",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Skill",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Skill",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Question",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Question",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Question",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Question",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Question",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "QuestionType",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "QuestionType",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "QuestionType",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "QuestionType",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "QuestionType",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Feedback",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Feedback",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Feedback",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Feedback",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Feedback",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Comment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Community",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Community",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Community",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Community",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Community",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "OffersOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "OffersOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "OffersOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "OffersOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "OffersOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publication",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publication",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publication",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publication",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Publication",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "PublicationsOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "PublicationsOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "PublicationsOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "PublicationsOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "PublicationsOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Post",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Post",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Post",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Post",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Post",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Offer",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Offer",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Offer",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Offer",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Offer",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Story",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Story",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Story",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Story",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Story",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Video",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Video",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Video",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Video",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Video",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Category",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Job",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Job",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Job",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Job",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Job",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Socialinterraction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Socialinterraction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Socialinterraction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Socialinterraction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Socialinterraction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersSkill",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersSkill",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersSkill",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersSkill",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersSkill",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnEntreprise",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnEntreprise",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnEntreprise",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnEntreprise",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "UsersOnEntreprise",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "EntreprisesOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "EntreprisesOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "EntreprisesOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "EntreprisesOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "EntreprisesOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "userList",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "audienceList",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ContractsOnCandidate",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ContractsOnCandidate",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ContractsOnCandidate",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ContractsOnCandidate",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "ContractsOnCandidate",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  //////////////////////////////////////////////
+
+
+  {
+    "role": "recruiter_role",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "User",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Candidate",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Candidate",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Candidate",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Candidate",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Candidate",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Recruiter",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Recruiter",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Recruiter",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Recruiter",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Recruiter",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Entreprise",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Entreprise",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Entreprise",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Entreprise",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Entreprise",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chatroom",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chatroom",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chatroom",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chatroom",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chatroom",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chat",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chat",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chat",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chat",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Chat",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Message",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Message",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Message",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Message",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Message",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "CandidatesOnChatroom",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "CandidatesOnChatroom",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "CandidatesOnChatroom",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "CandidatesOnChatroom",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "CandidatesOnChatroom",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "FollowEntreprise",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "FollowEntreprise",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "FollowEntreprise",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "FollowEntreprise",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "FollowEntreprise",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Survey",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Survey",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Survey",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Survey",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Survey",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Experience",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Experience",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Experience",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Experience",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Experience",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Course",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Course",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Course",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Course",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Course",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Contract",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Contract",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Contract",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Contract",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Contract",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Skill",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Skill",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Skill",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Skill",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Skill",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Question",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Question",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Question",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Question",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Question",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "QuestionType",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "QuestionType",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "QuestionType",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "QuestionType",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "QuestionType",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Feedback",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Feedback",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Feedback",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Feedback",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Feedback",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Comment",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Comment",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Comment",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Comment",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Comment",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Community",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Community",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Community",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Community",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Community",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "OffersOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "OffersOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "OffersOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "OffersOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "OffersOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Publication",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Publication",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Publication",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Publication",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Publication",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "PublicationsOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "PublicationsOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "PublicationsOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "PublicationsOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "PublicationsOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Event",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Event",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Event",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Event",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Event",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Post",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Post",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Post",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Post",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Post",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Offer",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Offer",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Offer",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Offer",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Offer",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Story",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Story",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Story",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Story",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Story",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Video",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Video",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Video",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Video",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Video",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Category",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Category",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Category",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Category",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Category",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Job",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Job",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Job",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Job",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Job",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Socialinterraction",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Socialinterraction",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Socialinterraction",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Socialinterraction",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "Socialinterraction",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersSkill",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersSkill",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersSkill",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersSkill",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersSkill",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnEntreprise",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnEntreprise",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnEntreprise",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnEntreprise",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "UsersOnEntreprise",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "EntreprisesOnCommunity",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "EntreprisesOnCommunity",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "EntreprisesOnCommunity",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "EntreprisesOnCommunity",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "EntreprisesOnCommunity",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "userList",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "audienceList",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "ContractsOnCandidate",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "ContractsOnCandidate",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "ContractsOnCandidate",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "ContractsOnCandidate",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "recruiter_role",
+    "resource": "ContractsOnCandidate",
+    "action": "read:any",
+    "attributes": "*"
+  },
+
+    //////////////////////////////////////////////
+
+
+    {
+      "role": "candidate_role",
+      "resource": "User",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "User",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "User",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "User",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "User",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Candidate",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Candidate",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Candidate",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Candidate",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Candidate",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Recruiter",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Recruiter",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Recruiter",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Recruiter",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Recruiter",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Entreprise",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Entreprise",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Entreprise",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Entreprise",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Entreprise",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chatroom",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chatroom",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chatroom",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chatroom",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chatroom",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chat",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chat",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chat",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chat",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Chat",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Message",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Message",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Message",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Message",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Message",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "CandidatesOnChatroom",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "CandidatesOnChatroom",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "CandidatesOnChatroom",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "CandidatesOnChatroom",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "CandidatesOnChatroom",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "FollowEntreprise",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "FollowEntreprise",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "FollowEntreprise",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "FollowEntreprise",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "FollowEntreprise",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Survey",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Survey",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Survey",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Survey",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Survey",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Experience",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Experience",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Experience",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Experience",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Experience",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Course",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Course",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Course",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Course",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Course",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Contract",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Contract",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Contract",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Contract",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Contract",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Skill",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Skill",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Skill",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Skill",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Skill",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Question",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Question",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Question",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Question",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Question",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "QuestionType",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "QuestionType",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "QuestionType",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "QuestionType",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "QuestionType",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Feedback",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Feedback",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Feedback",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Feedback",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Feedback",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Comment",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Comment",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Comment",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Comment",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Comment",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Community",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Community",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Community",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Community",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Community",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "OffersOnCommunity",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "OffersOnCommunity",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "OffersOnCommunity",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "OffersOnCommunity",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "OffersOnCommunity",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Publication",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Publication",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Publication",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Publication",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Publication",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "PublicationsOnCommunity",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "PublicationsOnCommunity",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "PublicationsOnCommunity",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "PublicationsOnCommunity",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "recandidate_rolecruiter_role",
+      "resource": "PublicationsOnCommunity",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Event",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Event",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Event",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Event",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Event",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Post",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Post",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Post",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Post",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Post",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Offer",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Offer",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Offer",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Offer",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Offer",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Story",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Story",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Story",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Story",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Story",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Video",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Video",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Video",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Video",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Video",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Category",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Category",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Category",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Category",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Category",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Job",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Job",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Job",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Job",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Job",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Socialinterraction",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Socialinterraction",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Socialinterraction",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Socialinterraction",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "Socialinterraction",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersSkill",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersSkill",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersSkill",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersSkill",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersSkill",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnCommunity",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnCommunity",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnCommunity",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnCommunity",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnCommunity",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnEntreprise",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnEntreprise",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnEntreprise",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnEntreprise",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "UsersOnEntreprise",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "EntreprisesOnCommunity",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "EntreprisesOnCommunity",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "EntreprisesOnCommunity",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "EntreprisesOnCommunity",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "EntreprisesOnCommunity",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "userList",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "audienceList",
+      "action": "read:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "ContractsOnCandidate",
+      "action": "read:own",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "ContractsOnCandidate",
+      "action": "create:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "ContractsOnCandidate",
+      "action": "update:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "ContractsOnCandidate",
+      "action": "delete:any",
+      "attributes": "*"
+    },
+    {
+      "role": "candidate_role",
+      "resource": "ContractsOnCandidate",
+      "action": "read:any",
+      "attributes": "*"
+    },
+ ////////////////////////////////////////////
+
+ {
+  "role": "admin",
+  "resource": "User",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "User",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "User",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "User",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "User",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Candidate",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Candidate",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Candidate",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Candidate",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Candidate",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Recruiter",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Recruiter",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Recruiter",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Recruiter",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Recruiter",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Entreprise",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Entreprise",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Entreprise",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Entreprise",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Entreprise",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chatroom",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chatroom",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chatroom",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chatroom",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chatroom",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chat",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chat",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chat",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chat",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Chat",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Message",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Message",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Message",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Message",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Message",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "CandidatesOnChatroom",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "CandidatesOnChatroom",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "CandidatesOnChatroom",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "CandidatesOnChatroom",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "CandidatesOnChatroom",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "FollowEntreprise",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "FollowEntreprise",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "FollowEntreprise",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "FollowEntreprise",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "FollowEntreprise",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Survey",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Survey",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Survey",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Survey",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Survey",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Experience",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Experience",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Experience",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Experience",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Experience",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Course",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Course",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Course",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Course",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Course",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Contract",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Contract",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Contract",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Contract",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Contract",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Skill",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Skill",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Skill",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Skill",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Skill",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Question",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Question",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Question",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Question",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Question",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "QuestionType",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "QuestionType",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "QuestionType",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "QuestionType",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "QuestionType",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Feedback",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Feedback",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Feedback",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Feedback",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Feedback",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Comment",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Comment",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Comment",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Comment",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Comment",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Community",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Community",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Community",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Community",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Community",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "OffersOnCommunity",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "OffersOnCommunity",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "OffersOnCommunity",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "OffersOnCommunity",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "OffersOnCommunity",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Publication",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Publication",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Publication",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Publication",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Publication",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "PublicationsOnCommunity",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "PublicationsOnCommunity",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "PublicationsOnCommunity",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "PublicationsOnCommunity",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "PublicationsOnCommunity",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Event",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Event",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Event",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Event",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Event",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Post",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "candidate_role",
+  "resource": "Post",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Post",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Post",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Post",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Offer",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Offer",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Offer",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Offer",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Offer",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Story",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Story",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Story",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Story",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Story",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Video",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Video",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Video",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Video",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Video",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Category",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Category",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Category",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Category",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Category",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Job",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Job",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Job",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Job",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Job",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Socialinterraction",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Socialinterraction",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Socialinterraction",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Socialinterraction",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "Socialinterraction",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersSkill",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersSkill",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersSkill",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersSkill",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersSkill",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnCommunity",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnCommunity",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnCommunity",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnCommunity",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnCommunity",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnEntreprise",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnEntreprise",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnEntreprise",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnEntreprise",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "UsersOnEntreprise",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "EntreprisesOnCommunity",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "EntreprisesOnCommunity",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "EntreprisesOnCommunity",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "EntreprisesOnCommunity",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "EntreprisesOnCommunity",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "userList",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "audienceList",
+  "action": "read:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "ContractsOnCandidate",
+  "action": "read:own",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "ContractsOnCandidate",
+  "action": "create:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "ContractsOnCandidate",
+  "action": "update:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "ContractsOnCandidate",
+  "action": "delete:any",
+  "attributes": "*"
+},
+{
+  "role": "admin",
+  "resource": "ContractsOnCandidate",
+  "action": "read:any",
+  "attributes": "*"
+}
+
+]

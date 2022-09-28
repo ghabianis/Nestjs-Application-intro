@@ -1,0 +1,816 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+model User {
+  id                  String               @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime?            @updatedAt
+  firstName           String?
+  lastName            String?
+  username            String               @unique
+  password            String
+  roles               String[]
+  candidateId         String?
+  recruiterId         String?
+  email               String?
+  phone               String?
+  address             String?
+  photo               String?
+  city                String?
+  kmRadius            String?
+  bio                 String?
+  sex                 EnumUserSex?
+  candidate           Candidate?
+  comments            Comment[]
+  feedbacks           Feedback[]
+  publications        Publication[]
+  recruiter           Recruiter?
+  socialinterractions Socialinterraction[]
+  usersOnCommunities  UsersOnCommunity[]
+  usersOnEntreprises  UsersOnEntreprise[]
+  usersSkills         UsersSkill[]
+  UserFeatures        UserFeatures[]
+}
+
+model Candidate {
+  id                    String                 @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt             DateTime               @default(now())
+  updatedAt             DateTime?              @updatedAt
+  activityField         String?
+  wantedPost            String?
+  experiencesYears      Int?
+  languages             String?
+  tags                  String?
+  maxSalary             Float?
+  minSalary             Float?
+  personalCv            String?
+  mediaLink             String?
+  job                   Job?                   @relation(fields: [jobId], references: [id])
+  jobId                 String?
+  chats                 Chat[]
+  Candidatecommunity    Candidatecommunity[]
+  Candidatelanguage     Candidatelanguage[]
+  candidatesOnChatrooms CandidatesOnChatroom[]
+  contractsOnCandidates ContractsOnCandidate[]
+  followEntreprises     FollowEntreprise[]
+  experiences           Experience[]
+  courses               Course[]
+  user                  User                   @relation(fields: [userId], references: [id])
+  userId                String                 @unique
+}
+
+model ContractsOnCandidate {
+  id          String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime?  @updatedAt
+  contract    Contract?  @relation(fields: [contractId], references: [id])
+  contractId  String?
+  candidate   Candidate? @relation(fields: [candidateId], references: [id])
+  candidateId String?
+}
+
+model Recruiter {
+  id           String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime?   @updatedAt
+  entrepriseId String?
+  userId       String      @unique @default(dbgenerated("requesting_user_id()"))
+  entreprise   Entreprise? @relation(fields: [entrepriseId], references: [id])
+  user         User        @relation(fields: [userId], references: [id])
+}
+
+model Entreprise {
+  id                       String                   @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt                DateTime                 @default(now())
+  updatedAt                DateTime?                @updatedAt
+  name                     String?
+  owner                    String?
+  presentationContent      String?
+  presentationVideolink    String?
+  websiteLink              String?
+  linkedinLink             String?
+  instagramLink            String?
+  departement              String?
+  workersNumber            Int?
+  email                    String?
+  image                    String?
+  coverImage               String?
+  chats                    Chat[]
+  chatrooms                Chatroom[]
+  entreprisesOnCommunities EntreprisesOnCommunity[]
+  followEntreprises        FollowEntreprise[]
+  posts                    Post[]
+  recruiters               Recruiter[]
+  surveys                  Survey[]
+  usersOnEntreprises       UsersOnEntreprise[]
+  videos                   Video[]
+}
+
+model Chatroom {
+  id                    String                 @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt             DateTime               @default(now())
+  updatedAt             DateTime?              @updatedAt
+  title                 String?
+  startDateTime         DateTime?
+  endDateTime           DateTime?
+  entrepriseId          String?
+  entreprise            Entreprise?            @relation(fields: [entrepriseId], references: [id])
+  candidatesOnChatrooms CandidatesOnChatroom[]
+}
+
+model Chat {
+  id           String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime?   @updatedAt
+  candidateId  String?
+  entrepriseId String?
+  candidate    Candidate?  @relation(fields: [candidateId], references: [id])
+  entreprise   Entreprise? @relation(fields: [entrepriseId], references: [id])
+  messages     Message[]
+}
+
+model Message {
+  id        String    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+  contenu   String?
+  chatId    String?
+  chat      Chat?     @relation(fields: [chatId], references: [id])
+}
+
+model CandidatesOnChatroom {
+  id          String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime?  @updatedAt
+  chatroom    Chatroom?  @relation(fields: [chatroomId], references: [id])
+  chatroomId  String?
+  candidate   Candidate? @relation(fields: [candidateId], references: [id])
+  candidateId String?
+}
+
+model FollowEntreprise {
+  id           String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime?   @updatedAt
+  entrepriseId String?
+  candidateId  String?
+  candidate    Candidate?  @relation(fields: [candidateId], references: [id])
+  entreprise   Entreprise? @relation(fields: [entrepriseId], references: [id])
+}
+
+model Survey {
+  id           String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime?   @updatedAt
+  title        String?
+  content      String?
+  entrepriseId String?
+  entreprise   Entreprise? @relation(fields: [entrepriseId], references: [id])
+}
+
+model Experience {
+  id               String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt        DateTime   @default(now())
+  updatedAt        DateTime?  @updatedAt
+  occupiedPosition String?
+  companyName      String?
+  startDate        DateTime?
+  endDate          DateTime?
+  isWorking        Boolean?
+  country          String?
+  description      String?
+  candidateId      String?
+  candidate        Candidate? @relation(fields: [candidateId], references: [id])
+}
+
+model Course {
+  id          String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime?  @updatedAt
+  title       String?
+  centerName  String?
+  startDate   DateTime?
+  endDate     DateTime?
+  isForming   Boolean?
+  country     String?
+  description String?
+  candidateId String?
+  candidate   Candidate? @relation(fields: [candidateId], references: [id])
+}
+
+model Contract {
+  id                    String                 @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt             DateTime               @default(now())
+  updatedAt             DateTime?              @updatedAt
+  name                  String?
+  contractsOnCandidates ContractsOnCandidate[]
+  offers                Offer[]
+}
+
+model Skill {
+  id          String       @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime?    @updatedAt
+  name        String?
+  usersSkills UsersSkill[]
+}
+
+model Question {
+  id             String        @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  title          String?
+  description    String?
+  questionTypeId String?
+  offerId        String?
+  videoId        String?
+  offer          Offer?        @relation(fields: [offerId], references: [id])
+  questionType   QuestionType? @relation(fields: [questionTypeId], references: [id])
+  video          Video?        @relation(fields: [videoId], references: [id])
+  deletedAt      DateTime?
+}
+
+model QuestionType {
+  id        String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt DateTime   @default(now())
+  updatedAt DateTime?  @updatedAt
+  label     String?
+  questions Question[]
+}
+
+model Feedback {
+  id        String    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+  contenu   String?
+  statue    String?
+  type      String?
+  offerId   String?
+  userId    String?   @default(dbgenerated("requesting_user_id()"))
+  offer     Offer?    @relation(fields: [offerId], references: [id])
+  user      User?     @relation(fields: [userId], references: [id])
+}
+
+model Comment {
+  id        String    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+  content   String?
+  userId    String?   @default(dbgenerated("requesting_user_id()"))
+  user      User?     @relation(fields: [userId], references: [id])
+}
+
+model Community {
+  id                        String                    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt                 DateTime                  @default(now())
+  updatedAt                 DateTime?                 @updatedAt
+  name                      String                    @unique
+  activityField             String?
+  descriptionFiled          String?
+  profilePicture            String?
+  coverPicture              String?
+  candidatecommunity        Candidatecommunity[]
+  entreprisesOnCommunities  EntreprisesOnCommunity[]
+  offersOnCommunities       OffersOnCommunity[]
+  publicationsOnCommunities PublicationsOnCommunity[]
+  usersOnCommunities        UsersOnCommunity[]
+}
+
+model Candidatecommunity {
+  id          String    @id @default(dbgenerated("gen_random_uuid()"))
+  candidateId String
+  communityId String
+  createdat   DateTime
+  updatedat   DateTime
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
+  community   Community @relation(fields: [communityId], references: [id])
+}
+
+model OffersOnCommunity {
+  id          String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime?  @updatedAt
+  offerId     String?
+  communityId String?
+  community   Community? @relation(fields: [communityId], references: [id])
+  offer       Offer?     @relation(fields: [offerId], references: [id])
+  deletedAt   DateTime?
+}
+
+model Publication {
+  id                        String                    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt                 DateTime                  @default(now())
+  updatedAt                 DateTime?                 @updatedAt
+  type                      EnumTypePub               @default(story)
+  title                     String?
+  description               String?
+  eventId                   String?
+  postId                    String?
+  offerId                   String?
+  storyId                   String?
+  videoId                   String?
+  userId                    String?                   @default(dbgenerated("requesting_user_id()"))
+  user                      User?                     @relation(fields: [userId], references: [id])
+  event                     Event?
+  offer                     Offer?
+  post                      Post?
+  publicationsOnCommunities PublicationsOnCommunity[]
+  socialinterractions       Socialinterraction[]
+  story                     Story?
+  video                     Video?
+  deletedAt                 DateTime?
+}
+
+model PublicationsOnCommunity {
+  id            String       @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime?    @updatedAt
+  publicationId String?
+  communityId   String?
+  community     Community?   @relation(fields: [communityId], references: [id])
+  publication   Publication? @relation(fields: [publicationId], references: [id])
+  deletedAt     DateTime?
+}
+
+model Video {
+  id            String       @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime?    @updatedAt
+  categoryId    String?
+  entrepriseId  String?
+  publicationId String?      @unique
+  url           String?
+  deletedAt     DateTime?
+  category      Category?    @relation(fields: [categoryId], references: [id])
+  entreprise    Entreprise?  @relation(fields: [entrepriseId], references: [id])
+  publication   Publication? @relation(fields: [publicationId], references: [id])
+  questions     Question[]
+}
+
+model Event {
+  id            String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime?   @updatedAt
+  deletedAt     DateTime?
+  location      String?
+  file          String?
+  link          String?
+  startDate     DateTime?
+  endDate       DateTime?
+  eventMode     String?
+  speakers      String?
+  isLiked       Boolean     @default(false)
+  publicationId String      @unique
+  publication   Publication @relation(fields: [publicationId], references: [id])
+}
+
+model Post {
+  id            String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime?   @updatedAt
+  image         String?
+  entrepriseId  String?
+  publicationId String      @unique
+  deletedAt     DateTime?
+  entreprise    Entreprise? @relation(fields: [entrepriseId], references: [id])
+  publication   Publication @relation(fields: [publicationId], references: [id])
+}
+
+model Offer {
+  id                  String              @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime?           @updatedAt
+  place               String?
+  renumeration        String?
+  offerType           String?
+  maxExperience       Int?
+  candidateMaxNumber  Int?
+  experienceLevel     String?
+  offerMode           String?
+  contractId          String?
+  publicationId       String              @unique
+  image               String?
+  isActive            Boolean?            @default(true)
+  contract            Contract?           @relation(fields: [contractId], references: [id])
+  publication         Publication         @relation(fields: [publicationId], references: [id])
+  feedbacks           Feedback[]
+  offersOnCommunities OffersOnCommunity[]
+  questions           Question[]
+  deletedAt           DateTime?
+}
+
+model Story {
+  id            String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime?   @updatedAt
+  publicationId String      @unique
+  mediaLink     String?
+  isLiked       Boolean     @default(false)
+  publication   Publication @relation(fields: [publicationId], references: [id])
+  deletedAt     DateTime?
+}
+
+model Category {
+  label     String?
+  image     String?
+  id        String    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+  videos    Video[]
+}
+
+model Job {
+  id         String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime?   @updatedAt
+  name       String?     @unique
+  candidates Candidate[]
+}
+
+model Socialinterraction {
+  id            String       @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime?    @updatedAt
+  deletedAt     DateTime?
+  type          String?
+  publicationId String?
+  userId        String?      @default(dbgenerated("requesting_user_id()"))
+  publication   Publication? @relation(fields: [publicationId], references: [id])
+  user          User?        @relation(fields: [userId], references: [id])
+}
+
+model UsersSkill {
+  id        String    @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt DateTime  @default(now())
+  updatedAt DateTime? @updatedAt
+  skillId   String?
+  userId    String?   @default(dbgenerated("requesting_user_id()"))
+  skill     Skill?    @relation(fields: [skillId], references: [id])
+  user      User?     @relation(fields: [userId], references: [id])
+}
+
+model UsersOnCommunity {
+  id          String     @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime?  @updatedAt
+  communityId String?
+  userId      String?    @default(dbgenerated("requesting_user_id()"))
+  community   Community? @relation(fields: [communityId], references: [id])
+  user        User?      @relation(fields: [userId], references: [id])
+}
+
+model UsersOnEntreprise {
+  id           String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime?   @updatedAt
+  entrepriseId String?
+  userId       String?     @default(dbgenerated("requesting_user_id()"))
+  entreprise   Entreprise? @relation(fields: [entrepriseId], references: [id])
+  user         User?       @relation(fields: [userId], references: [id])
+}
+
+model EntreprisesOnCommunity {
+  id           String      @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime?   @updatedAt
+  entrepriseId String?
+  communityId  String?
+  community    Community?  @relation(fields: [communityId], references: [id])
+  entreprise   Entreprise? @relation(fields: [entrepriseId], references: [id])
+}
+
+model Language {
+  id                String              @id @default(dbgenerated("gen_random_uuid()"))
+  name              String
+  createdAt         DateTime
+  updatedAt         DateTime
+  candidatelanguage Candidatelanguage[]
+}
+
+model Candidatelanguage {
+  id          String    @id @default(dbgenerated("gen_random_uuid()"))
+  candidateid String
+  languageid  String
+  createdat   DateTime
+  updatedat   DateTime
+  candidate   Candidate @relation(fields: [candidateid], references: [id])
+  language    Language  @relation(fields: [languageid], references: [id])
+}
+
+model City {
+  createdAt DateTime  @default(now())
+  id        String    @id @default(dbgenerated("gen_random_uuid()"))
+  name      String    @unique
+  updatedAt DateTime? @updatedAt
+}
+
+enum EnumUserSex {
+  Homme
+  Femme
+}
+
+enum EnumTypePub {
+  story
+  event
+  offer
+  video
+  post
+}
+
+// Stories view
+/// @view
+model Storiesview {
+  userid          String    @id @default(dbgenerated("gen_random_uuid()"))
+  views           Int
+  likes           Int
+  comments        Int
+  shares          Int
+  title           String
+  description     String?
+  entrepriseid    String
+  publicationId   String
+  deletedAt       DateTime?
+  createdAt       DateTime?
+  dateInteraction DateTime?
+  mediaLink       String?
+  // userid String
+}
+
+// Posts view
+/// @view
+model PostsView {
+  entrepriseid    String    @id @default(dbgenerated("gen_random_uuid()"))
+  likes           Int
+  comments        Int
+  shares          Int
+  title           String?
+  description     String?
+  views           Int
+  image           String?
+  createdAt       DateTime?
+  dateInteraction DateTime?
+  postid          String
+  deletedAt       DateTime?
+}
+
+// videos view
+/// @view
+model Videoview {
+  views        Int
+  likes        Int
+  comments     Int
+  shares       Int
+  title        String?
+  description  String?
+  entrepriseid String    @id @default(dbgenerated("gen_random_uuid()"))
+  userid       String
+  createdAt    DateTime?
+  url          String?
+  videoId      String
+  label        String?
+  deletedAt    DateTime?
+}
+
+// Event view
+/// @view
+model Eventsview {
+  views           Int
+  likes           Int
+  comments        Int
+  shares          Int
+  title           String
+  description     String
+  userid          String    @id @default(dbgenerated("gen_random_uuid()"))
+  location        String?
+  file            String?
+  startDate       DateTime?
+  id              String?
+  link            String?
+  endDate         DateTime?
+  attendees       Int
+  speakers        String?
+  createdAt       DateTime?
+  deletedAt       DateTime?
+  entrepriseId    String?
+  attended        String?
+  publicationId   String?
+}
+
+/// @view
+model Offersview {
+  views           Int
+  likes           Int
+  comments        Int
+  shares          Int
+  title           String
+  description     String
+  entrepriseId    String    @id @default(dbgenerated("gen_random_uuid()"))
+  userId          String
+  offerType       String
+  publicationId   String
+  isactive        Boolean
+  attendees       Int
+  createdAt       DateTime
+  offerId         String
+  deletedAt       DateTime?
+  dateInteraction DateTime?
+  isLike          String?
+  place           String?
+}
+
+/// @view 
+model audienceList {
+  firstName          String?
+  lastName           String?
+  username           String   @unique
+  roles              String[]
+  email              String?
+  phone              String?
+  address            String?
+  photo              String?
+  wantedPost         String?
+  personalCv         String?
+  mediaLink          String?
+  tags               String?
+  userId             String   @id @default(dbgenerated("gen_random_uuid()"))
+  like               Int?
+  share              Int?
+  comment            Int?
+  view               Int?
+  total_interactions Int?
+}
+
+/// @view 
+model userList {
+  firstName          String?
+  lastName           String?
+  username           String   @unique
+  roles              String[]
+  email              String?
+  phone              String?
+  address            String?
+  photo              String?
+  wantedPost         String?
+  personalCv         String?
+  mediaLink          String?
+  tags               String?
+  userId             String   @id @default(dbgenerated("gen_random_uuid()"))
+  like               Int?
+  share              Int?
+  comment            Int?
+  view               Int?
+  total_interactions Int?
+}
+
+/// @view 
+model Retcheeview {
+  entrepriseId         String       @id @default(dbgenerated("gen_random_uuid()"))
+  likes                Int
+  shares               Int?
+  comments             Int?
+  views                Int?
+  createdAt            DateTime
+  updatedAt            DateTime
+  creation_month       String?
+  creation_dayofweek   String?
+  creation_year        String?
+  creation_day         String?
+  creation_hour        String?
+  creation_week        String?
+  creation_weekofmonth String?
+  publication_type     EnumTypePub?
+  publicationId        String?
+}
+
+/// @view 
+model OfferFeedbackStatsView {
+  entrepriseId         String   @id @default(dbgenerated("gen_random_uuid()"))
+  createdAt            DateTime
+  updatedAt            DateTime
+  creation_month       String?
+  creation_dayofweek   String?
+  creation_year        String?
+  creation_day         String?
+  creation_hour        String?
+  creation_week        String?
+  creation_weekofmonth String?
+  publicationId        String?
+  offerId              String?
+  applicants           Int?
+}
+
+/// @view 
+model UserLikesView {
+  userid         String @id @default(dbgenerated("gen_random_uuid()"))
+  likes          Int
+  entrepriseid   String
+  entreprisename String
+}
+
+/// @view 
+model ApplyedCandiateList {
+  userid         String  @id @default(dbgenerated("gen_random_uuid()"))
+  feedbackstatus String?
+  offerstatus    Boolean
+  content        String?
+  offertype      String?
+  offerid        String?
+  feedback       String?
+  firstName      String?
+  lastName       String?
+  photo          String?
+  email          String?
+  likes          Int
+  comments       Int
+  shares         Int
+  job            String?
+  personalCv     String?
+  mediaLink      String?
+  isFavourite    Int?
+}
+
+/// @view 
+model statesBoardTableView {
+  userid         String @id @default(dbgenerated("gen_random_uuid()"))
+  likes          Int
+  subscribers    Int
+  shares         Int
+  entrepriseid   String
+  entreprisename String
+}
+
+//################## all those tables are created for notification purposes  ####################
+//Notification Table containes all the notifications for the socialinterraction likes, comments,shares  and vues
+model Notification {
+  userId          String?
+  event           String?
+  id              String    @id @default(dbgenerated("gen_random_uuid()"))
+  posterId        String?
+  createdAt       DateTime?
+  publicationType String?
+  statue          String?
+  startDate       DateTime?
+  offerId         String?
+  eventId         String?
+}
+
+//user features table
+model UserFeatures {
+  id          String   @id @default(dbgenerated("gen_random_uuid()"))
+  description String?
+  photo       String?
+  title       String?
+  link        String?
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+  createdAt   DateTime
+  updatedAt   DateTime
+}
+
+/// @view
+model CandidateCommunityView {
+  name          String?
+  activityField String?
+  candidatid    String?
+  userid        String    @id @default(dbgenerated("gen_random_uuid()"))
+  communityid   String?
+  photo         String?
+  location      String?
+  startDate     DateTime?
+  endDate       DateTime?
+  file          String?
+  link          String?
+  speakers      String?
+  publicationid String?
+}
+
+/// @view 
+model CommunityPosts {
+  id                   String    @unique
+  likes                Int
+  entrepriseId         String?
+  userId               String?
+  publicationId        String?
+  communityId          String?
+  candidateId          String?
+  shares               Int
+  comments             Int
+  views                Int
+  followers            Int
+  title                String?
+  username             String?
+  communityName        String?
+  entrepriseName       String?
+  description          String?
+  isLike               Int
+  createdAt            DateTime
+  deletedAt            DateTime?
+  image                String?
+  socialinterractionId String?
+}
